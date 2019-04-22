@@ -56,7 +56,6 @@ public class Twitch_chat : MonoBehaviour
         if(twitchClient.Available > 0)
         {
             var message = reader.ReadLine();
-
             if (message.Contains("PRIVMSG"))
             {
                 //get the users name
@@ -68,11 +67,16 @@ public class Twitch_chat : MonoBehaviour
                 splitPoint = message.IndexOf(":", 1);
                 message = message.Substring(splitPoint + 1);
                 print(String.Format("{0}: {1}", chatName, message));
-                if(message == "rocket")
-                {
-                    GameObject.Find("Rocket").transform.position = new Vector3(0, 0, 0);
-                }
-            }
+                message = message.Replace("(", "").Replace(")", "").Replace(" ","");
+                Debug.Log(message);
+                string[] str = message.Split(',');
+                Debug.Log(str[0]);
+                Debug.Log(str[1]);
+                //rocket (3,3)
+                GameObject grenadePrefab = Resources.Load("Prefabs/Grenade") as GameObject;
+                GameObject grenade = GameObject.Instantiate(grenadePrefab, transform.position, Quaternion.Euler(90, 0, 0));
+                grenade.transform.position = new Vector3(int.Parse(str[1]), 10, int.Parse(str[2]));
+            } 
 
 
            
