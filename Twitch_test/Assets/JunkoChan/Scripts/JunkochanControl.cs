@@ -42,8 +42,8 @@ public class JunkochanControl : MonoBehaviour {
 #region MOVEMENT
 		InputH = Input.GetAxis("Horizontal");//Get keyboard input
 		InputV = Input.GetAxis("Vertical");//Get keyboard input
-		Vector3 CamForward = Vector3.Scale(JKCCam.transform.forward, new Vector3(1, 0, 1)).normalized;//Camera's forward direction
-		Vector3 MoveDirection = CamForward * InputV + JKCCam.transform.right * InputH;//Get Junkochan's forward direction seen from camera
+		Vector3 CamForward = Vector3.Scale(Vector3.forward, new Vector3(1, 0, 1)).normalized;//Camera's forward direction
+		Vector3 MoveDirection = Vector3.forward * InputV + Vector3.right * InputH;//Get Junkochan's forward direction seen from camera
 
 		if (MoveDirection.magnitude > 0) {//When any WASD key is pushed
 			transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(MoveDirection), 0.2f);//Rotate Junkochan to Inputting direction
