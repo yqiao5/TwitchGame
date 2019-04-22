@@ -68,7 +68,10 @@ public class Twitch_chat : MonoBehaviour
                 splitPoint = message.IndexOf(":", 1);
                 message = message.Substring(splitPoint + 1);
                 print(String.Format("{0}: {1}", chatName, message));
-
+                if(message == "rocket")
+                {
+                    GameObject.Find("Rocket").transform.position = new Vector3(0, 0, 0);
+                }
             }
 
 
