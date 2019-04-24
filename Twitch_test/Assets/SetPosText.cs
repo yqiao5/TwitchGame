@@ -10,7 +10,7 @@ public class SetPosText : MonoBehaviour
     private void Start()
     {
         Pos = transform.parent.transform.position;
-        GetComponent<TextMeshPro>().text = "(" + Pos.x/2 + ","+ Pos.z/2 + ")";
+        GetComponent<TextMeshPro>().text =   Pos.x/2 + ","+ Pos.z/2 ;
     }
     // Update is called once per frame
     void Update()

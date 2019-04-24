@@ -87,5 +87,4 @@ public class Twitch_chat : MonoBehaviour
 
 
     }
-
 }
