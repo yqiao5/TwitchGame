@@ -75,7 +75,7 @@ public class Twitch_chat : MonoBehaviour
                 //rocket (3,3)
                 GameObject grenadePrefab = Resources.Load("Prefabs/Grenade") as GameObject;
                 GameObject grenade = GameObject.Instantiate(grenadePrefab, transform.position, Quaternion.Euler(90, 0, 0));
-                grenade.transform.position = new Vector3(int.Parse(str[1]), 10, int.Parse(str[2]));
+                grenade.transform.position = new Vector3(int.Parse(str[1])*2, 10, int.Parse(str[2])*2);
             } 
 
 
