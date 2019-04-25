@@ -15,17 +15,14 @@ public class JunkochanControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		JKCCam = GameObject.Find("JunkochanCam");
+		//JKCCam = GameObject.Find("JunkochanCam");
 		JKCController = this.GetComponent<CharacterController>();
 		JKCAnim = this.GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
 	void Update() {
-        if (GetComponent<Character>().GetHealth()<=0)
-        {
-            return;
-        }
+
 #region ACTION
 		if (CheckGrounded() && Input.GetMouseButtonDown(0)) {//When left clicked while Junkochan is on the ground
 			JKCAnim.SetTrigger("Slash");//Play "Sword_Iai" animation in "ActionLayer" in Animator
