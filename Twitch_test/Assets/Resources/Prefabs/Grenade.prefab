@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8576871734100616044}
   - component: {fileID: 4651870503186140702}
   - component: {fileID: 3879874675754341337}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 378599232282892116}
   - component: {fileID: 1564619251318666501}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 3356293959004968280}
   - component: {fileID: 4422639189563152019}
   - component: {fileID: 1593287552705205272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TinyFlames
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4988,7 +4988,7 @@ GameObject:
   - component: {fileID: 6722454282921472563}
   - component: {fileID: 7858459051510934478}
   - component: {fileID: 1356334606686636656}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
