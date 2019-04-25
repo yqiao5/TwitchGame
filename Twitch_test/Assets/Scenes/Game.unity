@@ -4498,6 +4498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c464a1879a4c8448838f411e8b3852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1605746222}
   username: soapmc10
   password: oauth:o6i2ni8sawv0je5kb9l9tma92trdjj
   channelName: soapmc10
@@ -6753,6 +6754,12 @@ PrefabInstance:
 --- !u!1 &1605746218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1347116199977322, guid: e209b9e719437e145951c42cb3c16ae4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1166079097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1605746222 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4697453817444104, guid: e209b9e719437e145951c42cb3c16ae4,
     type: 3}
   m_PrefabInstance: {fileID: 1166079097}
   m_PrefabAsset: {fileID: 0}

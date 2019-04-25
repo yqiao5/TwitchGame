@@ -10,6 +10,8 @@ using UnityEngine.UI;
 
 public class TwitchChat : MonoBehaviour
 {
+    public Transform player;
+
     private TcpClient twitchClient;
     private StreamReader reader;
     private StreamWriter writer;
@@ -33,19 +35,27 @@ public class TwitchChat : MonoBehaviour
         }
 
         ReadChat();
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            FireViewerWeapon("Grenade", "ok");
+        }
     }
 
     private void Connect()
     {
+        Debug.Log("connecting");
         twitchClient = new TcpClient("irc.chat.twitch.tv", 6667);
         reader = new StreamReader(twitchClient.GetStream());
         writer = new StreamWriter(twitchClient.GetStream());
-
         writer.WriteLine("PASS " + password);
         writer.WriteLine("NICK " + username);
         writer.WriteLine("USER " + username + " 8 * :" + username);
         writer.WriteLine("JOIN #" + channelName);
         writer.Flush();
+        if (twitchClient.Connected)
+        {
+            Debug.Log("connect successful");
+        }
     }
 
     private void ReadChat()
@@ -70,10 +80,21 @@ public class TwitchChat : MonoBehaviour
                 Debug.Log(str[0]);
                 Debug.Log(str[1]);
                 //rocket (3,3)
-                GameObject grenadePrefab = Resources.Load("Prefabs/Grenade") as GameObject;
-                GameObject grenade = GameObject.Instantiate(grenadePrefab, transform.position, Quaternion.Euler(90, 0, 0));
-                grenade.transform.position = new Vector3(int.Parse(str[1])*2, 10, int.Parse(str[2])*2);
+                
+                
+                
             } 
+        }
+    }
+
+    void FireViewerWeapon(string type,string viewerID)
+    {
+        switch (type)
+        {
+            case "Grenade":
+                GameObject grenadePrefab = Resources.Load("Prefabs/Grenade") as GameObject;
+                GameObject grenade = GameObject.Instantiate(grenadePrefab, new Vector3( player.position.x,10,player.position.z), Quaternion.Euler(90, 0, 0));                
+                break;
         }
     }
 }
