@@ -25,6 +25,7 @@ public class GrenadeSmash : MonoBehaviour
         {
             onFloor = true;
             GameObject explode = Instantiate(grenadeExplosionPrefab, transform.position,Quaternion.identity);
+            Debug.Log(transform.position);
             explode.name = "Explosion";
             explode.transform.SetParent(GameObject.Find("ExplosionHolder").transform);
             Destroy(gameObject);

@@ -8,7 +8,7 @@ using System.IO;
 using UnityEngine.UI;
 
 
-public class Twitch_chat : MonoBehaviour
+public class TwitchChat : MonoBehaviour
 {
     private TcpClient twitchClient;
     private StreamReader reader;
@@ -46,9 +46,6 @@ public class Twitch_chat : MonoBehaviour
         writer.WriteLine("USER " + username + " 8 * :" + username);
         writer.WriteLine("JOIN #" + channelName);
         writer.Flush();
-
-
-
     }
 
     private void ReadChat()
@@ -77,14 +74,6 @@ public class Twitch_chat : MonoBehaviour
                 GameObject grenade = GameObject.Instantiate(grenadePrefab, transform.position, Quaternion.Euler(90, 0, 0));
                 grenade.transform.position = new Vector3(int.Parse(str[1])*2, 10, int.Parse(str[2])*2);
             } 
-
-
-           
-
-
         }
-
-
-
     }
 }
