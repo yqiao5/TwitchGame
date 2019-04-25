@@ -78,7 +78,7 @@ public class JunkochanControl : MonoBehaviour {
 		}
 
 		if (CheckGrounded() && Input.GetKeyDown(KeyCode.Space)) {//When Space key is pushed while Junkochan is on the ground (Called only once)
-			VertSpeed =10f;//Set vertical jumping speed
+			VertSpeed =20f;//Set vertical jumping speed
 			JKCAnim.SetBool("Jump",true);
 		}
 
