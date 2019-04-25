@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyAfter : MonoBehaviour
+public class DestroyAfterParticle : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,15 +13,10 @@ public class DestroyAfter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        selfDestroy();
-    }
-    
-    void selfDestroy()
-    {
-        Debug.Log(GetComponent<ParticleSystem>().IsAlive());
         if (!GetComponent<ParticleSystem>().IsAlive())
         {
             Destroy(this.gameObject);
         }
     }
+
 }

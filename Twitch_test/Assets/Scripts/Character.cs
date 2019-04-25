@@ -7,8 +7,6 @@ public class Character : MonoBehaviour
     [SerializeField]
     private int Health;
 
-    private bool dead;
-
     private void Start()
     {
         Health = 100;
@@ -16,10 +14,10 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        die();
+
     }
 
-    public int getHealth()
+    public int GetHealth()
     {
         return Health;
     }
@@ -28,20 +26,17 @@ public class Character : MonoBehaviour
         Health = this.Health;
     }
 
-    public void decreaseHealth(int damage)
+    public void DecreaseHealth(int damage)
     {
         Health -= damage;
         if(Health <= 0)
         {
-            dead = true;
+            Die();
         }
     }
 
-    void die()
+    void Die()
     {
-        if (dead)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, -90);
-        }
+        transform.rotation = Quaternion.Euler(0, 0, -90);
     }
 }

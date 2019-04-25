@@ -10,7 +10,7 @@ public class GrenadeSmash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //sparkle.GetComponent<ParticleSystem>().enableEmission = false;
+
     }
 
     // Update is called once per frame
@@ -25,26 +25,14 @@ public class GrenadeSmash : MonoBehaviour
         {
             onFloor = true;
             GameObject explode = Instantiate(grenadeExplosionPrefab, transform.position,Quaternion.identity);
-            Debug.Log(transform.position);
+            //Debug.Log(transform.position);
             explode.name = "Explosion";
             explode.transform.SetParent(GameObject.Find("ExplosionHolder").transform);
             Destroy(gameObject);
-            //sparkle.GetComponent<ParticleSystem>().Play();            
-            //sparkle.GetComponent<ParticleSystem>().enableEmission = true;
-            //sparkle.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);    
-            //StartCoroutine("stopSparkle");
         }
         if(collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Character>().decreaseHealth(100);
+            collision.gameObject.GetComponent<Character>().DecreaseHealth(100);
         }
     }
-
-    //IEnumerable stopSparkle()
-    //{
-    //    yield return new WaitForSeconds(.4f);
-
-    //    sparkle.GetComponent<ParticleSystem>().enableEmission = false;
-
-    //}
 }
