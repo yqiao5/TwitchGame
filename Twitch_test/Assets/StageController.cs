@@ -4,28 +4,35 @@ using UnityEngine;
 
 public class StageController : MonoBehaviour
 {
+    public GameObject[] cannons;
 
-    [Header("CannonA1")]
-    public GameObject particle1;
-    public GameObject particle2;
 
-    [Header("CannonA2")]
-    public GameObject particle3;
-    public GameObject particle4;
+    private float timer;
+    private int groupID=0;
+    public float fireCooldown;
 
-    [Header("CannonA3")]
-    public GameObject particle5;
-    public GameObject particle6;
 
     // Start is called before the first frame update
     void Start()
     {
+        timer = fireCooldown;
         
     }
 
+    void Fire(int ID)
+    {
+        cannons[2*ID].SetActive(true);
+        cannons[2 * ID+1].SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        timer -= Time.deltaTime;
+        if (timer<=0&&groupID<cannons.Length/2)
+        {
+            timer = fireCooldown;
+            Fire(groupID);
+            groupID++;
+        }
     }
 }
