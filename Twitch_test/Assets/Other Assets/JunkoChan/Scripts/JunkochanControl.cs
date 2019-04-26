@@ -58,14 +58,14 @@ public class JunkochanControl : MonoBehaviour {
 		}
 
 		if (MoveDirection.magnitude > 0) {//When any WASD key is pushed
-			MoveSpeed = 2f;//Set Junkochan's moving speed as walking speed
+			MoveSpeed = 4f;//Set Junkochan's moving speed as walking speed
 			JKCAnim.SetBool("Move", true);//Set Junkochan's "Move" parameter in Animator component
 		} else {
 			JKCAnim.SetBool("Move", false);
 		}
 
 		if (Input.GetKey(KeyCode.LeftShift)) {//When shift key is pushed
-			MoveSpeed *= 2.9f;//Set Junkochan's moving speed as Running speed
+			MoveSpeed *= 2f;//Set Junkochan's moving speed as Running speed
 			JKCAnim.SetBool("Run", true);//Set Junkochan's "Run" parameter in Animator component
 		} else {
 			JKCAnim.SetBool("Run", false);
