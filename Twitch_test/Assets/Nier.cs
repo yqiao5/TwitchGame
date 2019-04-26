@@ -17,6 +17,7 @@ public class Nier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.Rotate(new Vector3(0, 50*Time.deltaTime, 0));
         fireTimer -= Time.deltaTime;
         if (fireTimer<=0)
         {
@@ -26,11 +27,13 @@ public class Nier : MonoBehaviour
     }
     void Fire()
     {
+        
         for (int i=0;i<6;i++)
         {
             Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, direction+i*60, 0));
         }
-        direction+=10;
+        
+        direction +=10;
         if (direction > 359)
         {
             direction = 0;
