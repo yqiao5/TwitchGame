@@ -65,7 +65,7 @@ public class JunkochanControl : MonoBehaviour {
 		}
 
 		if (Input.GetKey(KeyCode.LeftShift)) {//When shift key is pushed
-			MoveSpeed *= 2f;//Set Junkochan's moving speed as Running speed
+			MoveSpeed *= 2.7f;//Set Junkochan's moving speed as Running speed
 			JKCAnim.SetBool("Run", true);//Set Junkochan's "Run" parameter in Animator component
 		} else {
 			JKCAnim.SetBool("Run", false);
