@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Nier : MonoBehaviour
+public class NierWeapon : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public int direction = 0;

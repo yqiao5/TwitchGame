@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2757643925643381961}
   - component: {fileID: 2413097442147092460}
   - component: {fileID: 8512022143671040804}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: NierBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

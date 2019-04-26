@@ -140,7 +140,7 @@ public class TwitchChat : MonoBehaviour
                 StartPoll = false;
                 PollTime = intialPollTime;
                 LastUltimateTime = Time.time;
-                Debug.Log(PollResult[0] + ":" + PollResult[1]);
+                //Debug.Log(PollResult[0] + ":" + PollResult[1]);
                 Array.Clear(PollResult, 0, PollResult.Length);
             }
         }
