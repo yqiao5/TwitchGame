@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    [SerializeField]
-    private int Health;
+    [SerializeField] private int health;
 
     private void Start()
     {
-        Health = 100;
+
     }
 
     private void Update()
@@ -19,17 +18,17 @@ public class Character : MonoBehaviour
 
     public int GetHealth()
     {
-        return Health;
+        return health;
     }
-    public void setHealth(int Health)
+    public void SetHealth(int h)
     {
-        Health = this.Health;
+        health = h;
     }
 
-    public void DecreaseHealth(int damage)
+    public void DealDamage(int damage)
     {
-        Health -= damage;
-        if(Health <= 0)
+        health -= damage;
+        if(health <= 0)
         {
             Die();
         }

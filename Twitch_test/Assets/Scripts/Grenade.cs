@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBullet : MonoBehaviour
+
+public class Grenade : MonoBehaviour
 {
     [SerializeField] private int damage;
-    [SerializeField] private bool selfDestructAfterDamage;
+    [SerializeField] private float lifeTime;
+    [SerializeField] private GameObject grenadeExplosionPrefab;
+    private bool onFloor;
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Player>().DealDamage(damage);
-            if (selfDestructAfterDamage)
-            {
-                Destroy(gameObject);
-            }
         }
+        Instantiate(grenadeExplosionPrefab,transform.position,Quaternion.identity);
+        Destroy(gameObject);
     }
 }

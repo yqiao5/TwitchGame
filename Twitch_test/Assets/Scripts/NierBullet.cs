@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class NierBullet : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private int damage;
     [SerializeField] private float lifeTime;
+    [SerializeField] private float speed;
+    
     private float lifeTimer;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,15 @@ public class NierBullet : MonoBehaviour
         lifeTimer -= Time.deltaTime;
         if (lifeTimer<=0)
         {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<Player>().DealDamage(damage);
             Destroy(gameObject);
         }
     }
