@@ -14,8 +14,7 @@ GameObject:
   - component: {fileID: 2757643925643381961}
   - component: {fileID: 2413097442147092460}
   - component: {fileID: 8512022143671040804}
-  - component: {fileID: 8265696576644211110}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: NierBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2757643925643381960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -89,7 +88,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2757643925643381960}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -122,19 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea930fb2b0bc3b8438a50905599499ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  damage: 20
   lifeTime: 10
---- !u!114 &8265696576644211110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2757643925643381960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0bb9a20fafbae4abb7d72add617d8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 50
-  selfDestructAfterDamage: 1
+  speed: 5

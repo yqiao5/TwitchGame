@@ -58,7 +58,7 @@ public class JunkochanControl : MonoBehaviour {
 		}
 
 		if (MoveDirection.magnitude > 0) {//When any WASD key is pushed
-			MoveSpeed = 4f;//Set Junkochan's moving speed as walking speed
+			MoveSpeed = 5f;//Set Junkochan's moving speed as walking speed
 			JKCAnim.SetBool("Move", true);//Set Junkochan's "Move" parameter in Animator component
 		} else {
 			JKCAnim.SetBool("Move", false);
@@ -78,7 +78,7 @@ public class JunkochanControl : MonoBehaviour {
 		}
 
 		if (CheckGrounded() && Input.GetKeyDown(KeyCode.Space)) {//When Space key is pushed while Junkochan is on the ground (Called only once)
-			VertSpeed =20f;//Set vertical jumping speed
+			VertSpeed =10f;//Set vertical jumping speed
 			JKCAnim.SetBool("Jump",true);
 		}
 

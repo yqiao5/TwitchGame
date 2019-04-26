@@ -25,13 +25,13 @@ public class NierBullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Player>().DealDamage(damage);
+            other.gameObject.GetComponent<Player>().DealDamage(damage);
             Destroy(gameObject);
         }
     }
+
 }
