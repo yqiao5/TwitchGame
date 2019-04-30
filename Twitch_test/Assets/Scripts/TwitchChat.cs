@@ -23,6 +23,8 @@ public class TwitchChat : MonoBehaviour
     private float UltimateCooldown;
     [SerializeField]
     private float PollTime;
+    [SerializeField]
+    private UIController uIController;
     // Start is called before the first frame update
 
     public string username, password, channelName; // Get the password from twitchapps.com
@@ -101,8 +103,7 @@ public class TwitchChat : MonoBehaviour
                     }
                 }
                 string[] str = message.Split(',');
-                
-                
+                uIController.setDanmaku(chatName, str[0], str[1]);
             } 
         }
     }
