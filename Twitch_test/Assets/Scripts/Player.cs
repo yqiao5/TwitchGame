@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     [SerializeField] private ParticleSystem bloodSplatter;
     [SerializeField] private Vector3 lastCheckPointPos;
 
+    private IEnumerator coroutine;
+
     public int GetHealth()
     {
         return health;
@@ -34,9 +36,20 @@ public class Player : MonoBehaviour
         Debug.Log(lastCheckPointPos);
     }
 
-    void Die()
+    public void Die()
     {
+        health = 100;
         transform.rotation = Quaternion.Euler(0, 0, -90);
+        coroutine = DieCountDown(2.0f);
+        StartCoroutine(coroutine);
+    }
+
+
+
+    private IEnumerator DieCountDown(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
         transform.position = lastCheckPointPos;
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 }
