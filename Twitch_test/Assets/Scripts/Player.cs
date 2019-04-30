@@ -10,6 +10,23 @@ public class Player : MonoBehaviour
 
     private IEnumerator coroutine;
 
+    FMOD.Studio.EventInstance BGM;
+
+    private void Start()
+    {
+        BGM = FMODUnity.RuntimeManager.CreateInstance("event:/BGM");
+        BGM.start();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "BossGate")
+        {
+            Debug.Log("BossGate");
+            BGM.setParameterByName("Conditon", 0.5f);
+        }
+    }
+
     public int GetHealth()
     {
         return health;
@@ -23,6 +40,7 @@ public class Player : MonoBehaviour
     {
         health -= damage;
         bloodSplatter.Play();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/GetHurt");
         if (health <= 0)
         {
             Die();

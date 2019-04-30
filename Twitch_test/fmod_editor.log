@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002280157E1C8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001DB560A0BA8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,22 +15,701 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C4AB52F38C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC9FF26550
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC9FF26520
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC9FF26620
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC9FF266E0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001DBA4E43CD8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='273921__lemonjolly__hurt2-it-hurts', format=2, channels=2, frequency=48000, lengthbytes=8576, lengthpcm=37900, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.532135.
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB06F00998 : node = 000001DB4666F6F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB06F00998
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4666F800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB06F00998
+[LOG] SoundI::getSubSound                      : sound 000001DB06F00998.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB06F00B48
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB06F00B48
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB27E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB28F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB06F00998)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB92B03568)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB06F00B48)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C5A8 : node = 000001DB4DDB21A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB22B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C5A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2AB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2AB68
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F682148)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C758 : node = 000001DB4DDB22E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C758
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB23F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C758
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C758.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2AD18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2AD18
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C5A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8ED88)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2AB68)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB27E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB28F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C758)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8E8A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2AD18)
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681E08)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342CAB8 : node = 000001DB4DDB22E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342CAB8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB23F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342CAB8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342CAB8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB55F6A7E8 : node = 000001DB4306FC70
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB55F6A7E8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4306FD80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB55F6A7E8
+[LOG] SoundI::getSubSound                      : sound 000001DB55F6A7E8.  Subsound index 0 / 1
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB98064E08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB98064E08
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342CAB8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F682148)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342CAB8 : node = 000001DB4DDB26A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342CAB8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB27B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342CAB8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342CAB8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB98064088
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB98064088
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB55F6A7E8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681E08)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB98064E08)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB27E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB28F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB48A63688
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB48A63688
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342CAB8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681FA8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB98064088)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB55F6AEA8 : node = 000001DB4306FB30
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB55F6AEA8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4306FC40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB55F6AEA8
+[LOG] SoundI::getSubSound                      : sound 000001DB55F6AEA8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DBA4862F88)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB48A63688)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DBA0CE3AE8 : node = 000001DB92741700
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DBA0CE3AE8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB92741810
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DBA0CE3AE8
+[LOG] SoundI::getSubSound                      : sound 000001DBA0CE3AE8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2A9B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2A9B8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB55F6AEA8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F6822E8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DBA0CE3AE8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8ED88)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2A9B8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB97F2A9B8 : node = 000001DB7CFB1AE0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2A9B8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB7CFB1BF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2A9B8
+[LOG] SoundI::getSubSound                      : sound 000001DB97F2A9B8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2AB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2AB68
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB21A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB22B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB97F2A9B8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8E8A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2AB68)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C5A8 : node = 000001DB4DDB27E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB28F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C5A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DBA964E7C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DBA964E7C8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681E08)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB97F2AB68 : node = 000001DB7CFB19A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2AB68
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB7CFB1AB0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2AB68
+[LOG] SoundI::getSubSound                      : sound 000001DB97F2AB68.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2AD18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2AD18
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C5A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F6822E8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DBA964E7C8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C5A8 : node = 000001DB4DDB21A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB22B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C5A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB97F2AB68)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8EBE8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2AD18)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB22E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB23F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB46BAE7F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB46BAE7F8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C5A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681E08)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C5A8 : node = 000001DB4DDB2420
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB2530
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C5A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB46BAE9A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB46BAE9A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F682148)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB46BAE7F8)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {4636a252-1cdc-03bd-1191-4883f8b49c29} has already been loaded
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB48A63B98 : node = 000001DB97FC8400
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB48A63B98
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB97FC8510
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB48A63B98
+[LOG] SoundI::getSubSound                      : sound 000001DB48A63B98.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB46BAEB58
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB46BAEB58
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C5A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681FA8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB46BAE9A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C5A8 : node = 000001DB4DDB21A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB22B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C5A8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2A9B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2A9B8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB48A63B98)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F682148)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB46BAEB58)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342CAB8 : node = 000001DB4DDB26A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342CAB8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB27B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342CAB8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342CAB8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2AB68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2AB68
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C5A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8E8A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2A9B8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB22E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB23F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342CAB8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8EBE8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2AB68)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681E08)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB97F2A2F8 : node = 000001DB7CFB1860
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2A2F8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB7CFB1970
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2A2F8
+[LOG] SoundI::getSubSound                      : sound 000001DB97F2A2F8.  Subsound index 0 / 1
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::finishLoadBank                  : Bank with guid {4636a252-1cdc-03bd-1191-4883f8b49c29} has already been loaded
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB22E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB23F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2A4A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2A4A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB97F2A2F8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681E08)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C758 : node = 000001DB4DDB26A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C758
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB27B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C758
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C758.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8EBE8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2A4A8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB91FF0778
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB91FF0778
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB2420
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB2530
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB95F443A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB95F443A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C758)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB562FA168)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB91FF0778)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C5A8 : node = 000001DB4DDB27E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB28F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C5A8
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C5A8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C758 : node = 000001DB4DDB21A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C758
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB22B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 28000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='335571__magntron__gamemusic', format=2, channels=2, frequency=48000, lengthbytes=1944096, lengthpcm=7682688, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.893250.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C758
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C758.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB46BAE138
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB46BAE138
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681FA8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB95F443A8)
+[LOG] SoundI::release                          : 335571__magntron__gamemusic (000001DB55F6B058)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000001DB562F97A8)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000001DB91FF14F8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB48A63B98 : node = 000001DB97FC8400
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB48A63B98
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB97FC8510
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB48A63B98
+[LOG] SoundI::getSubSound                      : sound 000001DB48A63B98.  Subsound index 0 / 1
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB46BAE9A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB46BAE9A8
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C5A8)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F682148)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB46BAE138)
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB48A63B98)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB9F681E08)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB46BAE9A8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001DB4342C248 : node = 000001DB4DDB22E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001DB470113F8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB4342C248
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9912864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 8640
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001DB4DDB23F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='345985__cliftonmcarlson__blood-gush-spray', format=2, channels=1, frequency=48000, lengthbytes=122560, lengthpcm=567066, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB4342C248
+[LOG] SoundI::getSubSound                      : sound 000001DB4342C248.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001DB97F2A4A8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001DB97F2A4A8
+[LOG] SoundI::release                          : 335571__magntron__gamemusic (000001DB4342C758)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000001DB9F6822E8)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000001DB46BAED08)
+[LOG] SoundI::release                          : 345985__cliftonmcarlson__blood-gush-spray (000001DB4342C248)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB7CC8ED88)
+[LOG] SoundI::release                          :     345985__cliftonmcarlson__blood-gush-spray (000001DB97F2A4A8)
+[LOG] SoundI::release                          :  (000001DB1D2C2FC8)
+[LOG] SoundI::release                          :     273921__lemonjolly__hurt2-it-hurts (000001DB42BC7558)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
