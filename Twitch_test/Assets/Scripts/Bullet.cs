@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     // Start is called before the first frame update
     private Transform target;
-
+    public int damage;
     public float speed = 70f;
     public GameObject ImpactEffect;
 
@@ -42,10 +42,9 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
+        target.GetComponent<Player>().DealDamage(damage);
         GameObject effectIns = (GameObject)Instantiate(ImpactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
-
         Destroy(gameObject);
-
     }
 }
