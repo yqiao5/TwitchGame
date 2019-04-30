@@ -7,7 +7,8 @@ public class Player : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private ParticleSystem bloodSplatter;
     [SerializeField] private Vector3 lastCheckPointPos;
-
+    [SerializeField] private Transform JKCPlayer;
+    [SerializeField] private GameObject JKCRagdoll;
     private IEnumerator coroutine;
 
     FMOD.Studio.EventInstance BGM;
@@ -56,7 +57,8 @@ public class Player : MonoBehaviour
     public void Die()
     {
         health = 100;  
-        transform.position = lastCheckPointPos;
+        JKCPlayer.position = lastCheckPointPos;
+        
     }
 
 
@@ -64,7 +66,7 @@ public class Player : MonoBehaviour
     private IEnumerator DieCountDown(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        transform.position = lastCheckPointPos;
-        transform.rotation = Quaternion.Euler(0, 0, 0);
+        JKCPlayer.position = lastCheckPointPos;
+        JKCPlayer.rotation = Quaternion.Euler(0, 0, 0);
     }
 }
