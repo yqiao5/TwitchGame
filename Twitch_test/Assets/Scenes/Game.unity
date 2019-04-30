@@ -69474,7 +69474,7 @@ PrefabInstance:
     - target: {fileID: 5491134468512167949, guid: 6840a19cac3f0db408f9233faede7820,
         type: 3}
       propertyPath: m_Name
-      value: GreatAxeRing
+      value: StormBreakerBoss
       objectReference: {fileID: 0}
     - target: {fileID: 5491134468512459821, guid: 6840a19cac3f0db408f9233faede7820,
         type: 3}
