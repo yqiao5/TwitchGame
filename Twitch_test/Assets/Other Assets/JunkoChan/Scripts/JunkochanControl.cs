@@ -22,7 +22,7 @@ public class JunkochanControl : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-
+        //Debug.Log(transform.position);
 #region ACTION
 		if (CheckGrounded() && Input.GetMouseButtonDown(0)) {//When left clicked while Junkochan is on the ground
 			JKCAnim.SetTrigger("Slash");//Play "Sword_Iai" animation in "ActionLayer" in Animator

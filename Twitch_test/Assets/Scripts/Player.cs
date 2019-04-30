@@ -33,16 +33,12 @@ public class Player : MonoBehaviour
     public void setCheckPointPos(Vector3 cpPosition)
     {
         lastCheckPointPos = cpPosition;
-        Debug.Log(lastCheckPointPos);
     }
 
     public void Die()
     {
-        health = 100;
-        //transform.rotation = Quaternion.Euler(0, 0, -90);
+        health = 100;  
         transform.position = lastCheckPointPos;
-        coroutine = DieCountDown(2.0f);
-        //StartCoroutine(coroutine);
     }
 
 
