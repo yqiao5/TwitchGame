@@ -5038,8 +5038,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88727a1e7dd62e24899e6ffb2df88aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  lifeTime: 0
+  damage: 10
+  lifeTime: 10
   grenadeExplosionPrefab: {fileID: 8400671732821939679, guid: 981a15ac0a4f97349ab99f7301eb6ae8,
     type: 3}
 --- !u!108 &7858459051510934478
