@@ -6,15 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private int health;
     [SerializeField] private ParticleSystem bloodSplatter;
-    private void Start()
-    {
-
-    }
-
-    private void Update()
-    {
-
-    }
+    [SerializeField] private Vector3 lastCheckPointPos;
 
     public int GetHealth()
     {
@@ -29,14 +21,22 @@ public class Player : MonoBehaviour
     {
         health -= damage;
         bloodSplatter.Play();
-        if(health <= 0)
+        if (health <= 0)
         {
             Die();
         }
     }
 
+    //set last check point pos;
+    public void setCheckPointPos(Vector3 cpPosition)
+    {
+        lastCheckPointPos = cpPosition;
+        Debug.Log(lastCheckPointPos);
+    }
+
     void Die()
     {
         transform.rotation = Quaternion.Euler(0, 0, -90);
+        transform.position = lastCheckPointPos;
     }
 }
