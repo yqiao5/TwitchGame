@@ -4,12 +4,51 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public GameObject player;
-    Vector3 delta=new Vector3(0,30,-19);
+    public Transform myCamera;
+    public Transform target;
+    public bool followX;
+    public bool followY;
+    public bool followZ;
+    public Vector3 delta;
+    public float distance;
+    public float zoomSpeed;
 
+    private float fraction = 0;
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position+delta;
+        Follow();
+        Zoom();
     }
+
+    void Follow()
+    {
+        Vector3 temp = Vector3.zero;
+        //Follow target position.x
+        if (followX)
+            temp.x = target.position.x + delta.x;
+        else
+            temp.x = delta.x;
+        //Follow target position.y
+        if (followY)
+            temp.y = target.position.y + delta.y;
+        else
+            temp.y = delta.y;
+        //Follow target position.z
+        if (followZ)
+            temp.z = target.position.z + delta.z;
+        else
+            temp.z = delta.z;
+
+        transform.position = temp;
+    }
+    void Zoom()
+    {
+        
+        Vector3 temp = Vector3.zero;
+        temp.z = -distance;
+        myCamera.localPosition = Vector3.Lerp(myCamera.localPosition, temp, zoomSpeed);
+        
+    }
+
 }
