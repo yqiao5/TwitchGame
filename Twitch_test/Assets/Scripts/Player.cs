@@ -39,9 +39,10 @@ public class Player : MonoBehaviour
     public void Die()
     {
         health = 100;
-        transform.rotation = Quaternion.Euler(0, 0, -90);
+        //transform.rotation = Quaternion.Euler(0, 0, -90);
+        transform.position = lastCheckPointPos;
         coroutine = DieCountDown(2.0f);
-        StartCoroutine(coroutine);
+        //StartCoroutine(coroutine);
     }
 
 
