@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private int health;
-
+    [SerializeField] private ParticleSystem bloodSplatter;
     private void Start()
     {
 
@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
     public void DealDamage(int damage)
     {
         health -= damage;
+        bloodSplatter.Play();
         if(health <= 0)
         {
             Die();
