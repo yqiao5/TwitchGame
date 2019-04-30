@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{aa20ac52-47dd-4fd6-9ffd-410979cfb894}">
+		<property name="assetPath">
+			<value>85429__jasonelrod__blade-big.aiff</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>23.033333333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{270f89c7-5ee3-4f99-855d-15eced1764c1}</destination>
+		</relationship>
+	</object>
+</objects>
