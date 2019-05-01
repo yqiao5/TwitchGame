@@ -12,9 +12,28 @@ public class PlayerControl : MonoBehaviour
     private Vector3 Inputs= Vector3.zero;
     private Rigidbody JKCRigidbody;
     private Animator JKCAnim;//Animator component attached to Junkochan
-    // Start is called before the first frame update
+                             // Start is called before the first frame update
+    FMOD.Studio.EventInstance BGM;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "BossGate")
+        {
+           
+            BGM.setParameterByName("Conditon", 0.5f);
+        }
+
+        if (other.tag == "VictoryGate")
+        {
+            Debug.Log("VictoryGate");
+            BGM.setParameterByName("Conditon", 0.8f);
+        }
+    }
+
     void Start()
     {
+        BGM = FMODUnity.RuntimeManager.CreateInstance("event:/BGM");
+        BGM.start();
         JKCRigidbody = this.GetComponent<Rigidbody>();
         JKCAnim = this.GetComponent<Animator>();
     }
@@ -65,7 +84,7 @@ public class PlayerControl : MonoBehaviour
         }
         else
         {
-            //currentMoveSpeed *= 0.5f;
+            currentMoveSpeed *= 0.7f;
             JKCAnim.SetBool("Grounded", false);
         }
 

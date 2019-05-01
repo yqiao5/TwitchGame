@@ -18,6 +18,7 @@ public class TwitchChat : MonoBehaviour
     private StreamWriter writer;
     private int[] PollResult = new int[2];
     public bool StartPollRoom;
+    public bool StartBossPoll;
     private float intialPollTime;
     [SerializeField]
     private float UltimateCooldown;
@@ -29,6 +30,10 @@ public class TwitchChat : MonoBehaviour
     private GameObject leftRoad;
     [SerializeField]
     private GameObject rightRoad;
+    [SerializeField]
+    private GameObject StormBreaker;
+    [SerializeField]
+    private GameObject SkullCrusher;
     [SerializeField]
     private TextMeshProUGUI roomChoice;
     // Start is called before the first frame update
@@ -57,6 +62,7 @@ public class TwitchChat : MonoBehaviour
             FireViewerWeapon("Grenade", "ok");
         }
         PollRoom();
+        PollBoss();
     }
 
     private void Connect()
@@ -91,9 +97,7 @@ public class TwitchChat : MonoBehaviour
                 //get the users message
                 splitPoint = message.IndexOf(":", 1);
                 message = message.Substring(splitPoint + 1);
-                print(String.Format("{0}: {1}", chatName, message));
-                message = message.Replace("(", "").Replace(")", "").Replace(" ","");
-                if (StartPollRoom)
+                if (StartPollRoom || StartBossPoll)
                 {
                     if (message[0] == '!')
                     {
@@ -109,8 +113,12 @@ public class TwitchChat : MonoBehaviour
                         }
                     }
                 }
-                string[] str = message.Split(',');
-                uIController.setDanmaku(chatName, str[0], str[1]);
+                if(message == "!g")
+                {
+                    uIController.setDanmaku(chatName);
+                    FireViewerWeapon("Grenade", chatName);
+                }
+                    
             } 
         }
     }
@@ -131,7 +139,7 @@ public class TwitchChat : MonoBehaviour
         if (StartPollRoom)
         {
             roomChoice.gameObject.SetActive(true);
-            roomChoice.text = "POLL! \n Big Spin:Thor's Hammer \n" + PollResult[0] + "     :     " + PollResult[1];
+            roomChoice.text = "POLL! \n Big Spin : Thor's Hammer \n" + PollResult[0] + "     :     " + PollResult[1];
             if (PollTime>0)
             {
                 PollTime -= Time.deltaTime;
@@ -149,6 +157,37 @@ public class TwitchChat : MonoBehaviour
                 else
                 {
                     rightRoad.SetActive(false);
+                    roomChoice.gameObject.SetActive(false);
+                }
+                Array.Clear(PollResult, 0, PollResult.Length);
+            }
+        }
+        return PollResult;
+    }
+
+    int[] PollBoss()
+    {
+        if (StartBossPoll)
+        {
+            roomChoice.gameObject.SetActive(true);
+            roomChoice.text = "POLL! \n Storm Breaker : Skull Crusher \n" + PollResult[0] + "     :     " + PollResult[1];
+            if (PollTime > 0)
+            {
+                PollTime -= Time.deltaTime;
+            }
+            else
+            {
+                StartBossPoll = false;
+                PollTime = intialPollTime;
+                Debug.Log(PollResult[0] + ":" + PollResult[1]);
+                if (PollResult[0] > PollResult[1])
+                {
+                    StormBreaker.SetActive(true);
+                    roomChoice.gameObject.SetActive(false);
+                }
+                else
+                {
+                    SkullCrusher.SetActive(true);
                     roomChoice.gameObject.SetActive(false);
                 }
                 Array.Clear(PollResult, 0, PollResult.Length);

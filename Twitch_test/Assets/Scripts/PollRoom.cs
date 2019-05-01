@@ -12,8 +12,8 @@ public class PollRoom : MonoBehaviour
             if (other.transform.position.x > transform.position.x)
             {
                 transform.GetComponent<Collider>().isTrigger = false;
+                GameObject.Find("TwitchChat").GetComponent<TwitchChat>().StartPollRoom = true;
             }
         }
-        GameObject.Find("TwitchChat").GetComponent<TwitchChat>().StartPollRoom = true;
     }
 }

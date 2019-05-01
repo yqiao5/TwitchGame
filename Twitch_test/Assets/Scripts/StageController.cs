@@ -10,7 +10,7 @@ public class StageController : MonoBehaviour
     private float timer;
     private int groupID=0;
     public float fireCooldown;
-
+    public bool fire = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,14 +25,19 @@ public class StageController : MonoBehaviour
         cannons[2 * ID+1].SetActive(true);
     }
     // Update is called once per frame
+
     void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer<=0&&groupID<cannons.Length/2)
+        if (fire)
         {
-            timer = fireCooldown;
-            Fire(groupID);
-            groupID++;
+            timer -= Time.deltaTime;
+            if (timer <= 0 && groupID < cannons.Length / 2)
+            {
+                timer = fireCooldown;
+                Fire(groupID);
+                groupID++;
+            }
         }
+        
     }
 }

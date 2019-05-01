@@ -9,25 +9,10 @@ public class Player : MonoBehaviour
     [SerializeField] private Vector3 lastCheckPointPos;
     [SerializeField] private Transform JKCPlayer;
     [SerializeField] private GameObject JKCRagdoll;
-    [SerializeField] private CameraControl JKCCameraConrtol;
+    public CameraControl JKCCameraConrtol;
     private IEnumerator coroutine;
 
-    FMOD.Studio.EventInstance BGM;
 
-    private void Start()
-    {
-        BGM = FMODUnity.RuntimeManager.CreateInstance("event:/BGM");
-        BGM.start();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "BossGate")
-        {
-            Debug.Log("BossGate");
-            BGM.setParameterByName("Conditon", 0.5f);
-        }
-    }
 
     public int GetHealth()
     {
@@ -38,7 +23,7 @@ public class Player : MonoBehaviour
         health = h;
     }
 
-    public void DealDamage(int damage)
+    public void DealDamage(int damage,bool force)
     {
         if (health <= 0)
             return;
@@ -47,7 +32,7 @@ public class Player : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot("event:/GetHurt");
         if (health <= 0)
         {
-            Die();
+            Die(force);
         }
     }
 
@@ -57,7 +42,7 @@ public class Player : MonoBehaviour
         lastCheckPointPos = cpPosition;
     }
 
-    public void Die()
+    public void Die(bool force)
     {
 
         JKCPlayer.gameObject.SetActive(false);
@@ -66,12 +51,13 @@ public class Player : MonoBehaviour
         JKCRagdoll.transform.position = temp;
         JKCRagdoll.transform.rotation = JKCPlayer.rotation;
         JKCRagdoll.SetActive(true);
-
+        JKCCameraConrtol.target = JKCRagdoll.transform;
+        if (force) { JKCRagdoll.GetComponent<Rigidbody>().AddForce(Vector3.one * 5000f); }
+        Debug.Log(JKCRagdoll.GetComponent<Rigidbody>().velocity);
         JKCCameraConrtol.SetDistance(10);
         IEnumerator coroutine = Reset(2f);
         StartCoroutine(coroutine);
     }
-
 
 
 
@@ -82,6 +68,8 @@ public class Player : MonoBehaviour
         health = 100;
         JKCPlayer.position = lastCheckPointPos;
         JKCPlayer.gameObject.SetActive(true);
+        JKCCameraConrtol.target = JKCPlayer;
         JKCCameraConrtol.SetDistance(JKCCameraConrtol.defaultCameraDistance);
     }
+
 }

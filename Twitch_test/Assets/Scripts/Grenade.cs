@@ -29,7 +29,7 @@ public class Grenade : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Player>().DealDamage(damage);
+            collision.gameObject.GetComponentInParent<Player>().DealDamage(damage,false);
         }
         Instantiate(grenadeExplosionPrefab,transform.position,Quaternion.identity);
         Destroy(gameObject);

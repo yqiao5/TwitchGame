@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Enemy
   - BossGate
+  - VictoryGate
   layers:
   - Default
   - TransparentFX

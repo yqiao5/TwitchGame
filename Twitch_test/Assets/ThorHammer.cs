@@ -5,7 +5,7 @@ using UnityEngine;
 public class ThorHammer : MonoBehaviour
 {
     //[SerializeField] private Transform tip;
-
+    [SerializeField] private int damage;
     public float rotateSpeed;
 
     private float speed;
@@ -18,6 +18,7 @@ public class ThorHammer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         Vector3 temp = Vector3.zero;
         temp.z = rotateSpeed;
         transform.Rotate(temp * Time.deltaTime);
@@ -27,5 +28,13 @@ public class ThorHammer : MonoBehaviour
         Vector3 temp = Vector3.zero;
         temp.z = -30;
         transform.eulerAngles = temp;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponentInParent<Player>().DealDamage(damage,true);
+        }
     }
 }

@@ -25,10 +25,10 @@ public class UIController : MonoBehaviour
         HealthText.text = "Health: " + Player.GetHealth() + "/100";
     }
 
-    public void setDanmaku(string player, string positionX, string positionY)
+    public void setDanmaku(string player)
     {
         Danmaku.text = "";
-        string text = player + " fire a rocket at " + "(" + positionX + "," + positionY + ").\n";
+        string text = player + " fire a rocket.\n";
         if(DanmakuText.Count < 5)
         {
             DanmakuText.Add(text);

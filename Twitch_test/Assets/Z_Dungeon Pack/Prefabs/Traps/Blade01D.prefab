@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4944235257259722}
   - component: {fileID: 33376971025111118}
   - component: {fileID: 23824233261115642}
+  - component: {fileID: 7700640806928742542}
   m_Layer: 11
   m_Name: Blade01D
   m_TagString: Untagged
@@ -77,3 +78,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7700640806928742542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863951177994420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0962fbaa3d94f3e4d9256466624f06b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  selfDestructAfterDamage: 0

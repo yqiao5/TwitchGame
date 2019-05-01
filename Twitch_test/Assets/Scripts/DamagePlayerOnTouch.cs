@@ -11,7 +11,7 @@ public class DamagePlayerOnTouch : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Player>().DealDamage(damage);
+            other.gameObject.GetComponentInParent<Player>().DealDamage(damage,false);
             if (selfDestructAfterDamage)
             {
                 Destroy(gameObject);
