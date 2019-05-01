@@ -139,7 +139,7 @@ public class TwitchChat : MonoBehaviour
         if (StartPollRoom)
         {
             roomChoice.gameObject.SetActive(true);
-            roomChoice.text = "POLL! \n Big Spin : Thor's Hammer \n" + PollResult[0] + "     :     " + PollResult[1];
+            roomChoice.text = "POLL! \n [!1]Big Spin : [!2]Thor's Hammer \n" + PollResult[0] + "     :     " + PollResult[1];
             if (PollTime>0)
             {
                 PollTime -= Time.deltaTime;
@@ -170,7 +170,7 @@ public class TwitchChat : MonoBehaviour
         if (StartBossPoll)
         {
             roomChoice.gameObject.SetActive(true);
-            roomChoice.text = "POLL! \n Storm Breaker : Skull Crusher \n" + PollResult[0] + "     :     " + PollResult[1];
+            roomChoice.text = "POLL! \n [!1]Storm Breaker : [!2]Skull Crusher \n" + PollResult[0] + "     :     " + PollResult[1];
             if (PollTime > 0)
             {
                 PollTime -= Time.deltaTime;
