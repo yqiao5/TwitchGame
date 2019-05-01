@@ -8,7 +8,7 @@ public class CheckPoint : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            other.GetComponent<Player>().setCheckPointPos(new Vector3(transform.position.x,1,0));
+            other.GetComponentInParent<Player>().setCheckPointPos(new Vector3(transform.position.x,1,0));
             Destroy(this.gameObject);
         }
     }
