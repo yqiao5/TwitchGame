@@ -7,13 +7,201 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B7BBAAB958 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002DA36E1A7A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA0D0EBDE8 : node = 000002DA711EC1F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA0D0EBDE8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA0D0EBDE8
+[LOG] SoundI::getSubSound                      : sound 000002DA0D0EBDE8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA332CE6D8)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA320CBE28)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA332CEA38)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA32F3FD18 : node = 000002DA711EC0B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA32F3FD18
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC1C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA32F3FD18
+[LOG] SoundI::getSubSound                      : sound 000002DA32F3FD18.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA0D0EBDE8)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA0D519588)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA32F3F658)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA332CEA38 : node = 000002DA711EC1F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA332CEA38
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA332CEA38
+[LOG] SoundI::getSubSound                      : sound 000002DA332CEA38.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA32F3FD18)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA3154C518)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA332CE6D8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA32F3FD18 : node = 000002DA711EC0B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA32F3FD18
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC1C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA32F3FD18
+[LOG] SoundI::getSubSound                      : sound 000002DA32F3FD18.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA332CEA38)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA3154EA78)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA32F3F658)
+[LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA332CEA38 : node = 000002DA711EC1F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA332CEA38
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA332CEA38
+[LOG] SoundI::getSubSound                      : sound 000002DA332CEA38.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA32F3FD18)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA3154C518)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA332CE6D8)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA332CE6D8 : node = 000002DA711EC0B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA332CE6D8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC1C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA332CE6D8
+[LOG] SoundI::getSubSound                      : sound 000002DA332CE6D8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA332CEA38)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA3154C6B8)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA32F3F658)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA0D0EBDE8 : node = 000002DA711EC1F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA0D0EBDE8
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA0D0EBDE8
+[LOG] SoundI::getSubSound                      : sound 000002DA0D0EBDE8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA332CE6D8)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA0D51A908)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA31F86B68)
+[LOG] SystemI::createSound                     : filename = Audio\TwitchGame_Audio\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002DA31F86B68 : node = 000002DA711EC0B0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002DA320CCFB8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002DA31F86B68
+[LOG] SystemI::createSoundInternal             :     Create name='Audio\TwitchGame_Audio\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 10108256
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9664
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002DA711EC1C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 1271
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='85429__jasonelrod__blade-big', format=2, channels=1, frequency=48000, lengthbytes=195136, lengthpcm=1105600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507721.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002DA31F86B68
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA31F86B68)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA0D519588)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA332CE6D8)
+[LOG] SoundI::release                          : 85429__jasonelrod__blade-big (000002DA0D0EBDE8)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA2A081338)
+[LOG] SoundI::release                          :     85429__jasonelrod__blade-big (000002DA32F3FD18)
+[LOG] SoundI::release                          : 335571__magntron__gamemusic (000002DA332CDB08)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000002DA320CC4A8)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000002DA332CDE68)
+[LOG] SoundI::release                          : 335571__magntron__gamemusic (000002DA332CD958)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000002DA320CC988)
+[LOG] SoundI::release                          :     335571__magntron__gamemusic (000002DA332CDCB8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
@@ -27,10 +215,3 @@
 [LOG] Manager::finishLoadBank                  : Bank with guid {f854f768-4808-01fe-0426-0a498c50c295} has already been loaded
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
 [LOG] Manager::readBank                        : fileversion = 119, compatVersion = 119 (oldest = 44, newest = 119)
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
