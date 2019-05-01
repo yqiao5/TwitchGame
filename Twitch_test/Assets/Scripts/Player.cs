@@ -59,13 +59,15 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        
+
         JKCPlayer.gameObject.SetActive(false);
+
         Vector3 temp= JKCPlayer.position;
         temp.y += 1;
         JKCRagdoll.transform.position = temp;
         JKCRagdoll.transform.rotation = JKCPlayer.rotation;
         JKCRagdoll.SetActive(true);
+
         JKCCameraConrtol.SetDistance(10);
         IEnumerator coroutine = Reset(2f);
         StartCoroutine(coroutine);
