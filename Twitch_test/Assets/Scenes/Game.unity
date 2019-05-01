@@ -97367,11 +97367,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 6.8
       objectReference: {fileID: 0}
-    - target: {fileID: 674769583659666596, guid: d9bea97488dcd0c4c9a04f490e0ccc12,
-        type: 3}
-      propertyPath: JKCCameraConrtol
-      value: 
-      objectReference: {fileID: 254308731}
     - target: {fileID: 674769583659666619, guid: d9bea97488dcd0c4c9a04f490e0ccc12,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -97427,6 +97422,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 674769583659666596, guid: d9bea97488dcd0c4c9a04f490e0ccc12,
+        type: 3}
+      propertyPath: JKCCameraConrtol
+      value: 
+      objectReference: {fileID: 254308731}
     - target: {fileID: 674769581844336737, guid: d9bea97488dcd0c4c9a04f490e0ccc12,
         type: 3}
       propertyPath: m_Constraints
@@ -97810,6 +97810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2669065364564685774}
   - component: {fileID: 1391952129089585630}
+  - component: {fileID: 1391952129089585631}
   m_Layer: 0
   m_Name: ThorHammer
   m_TagString: Untagged
@@ -97836,6 +97837,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1391952129089585631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391952129089585629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a23490101875a46b8cffac6242c8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 720
 --- !u!4 &1406158115906622288
 Transform:
   m_ObjectHideFlags: 0
@@ -98300,7 +98314,7 @@ Transform:
   m_GameObject: {fileID: 1391952129089585629}
   m_LocalRotation: {x: 0.50189495, y: 0.49809784, z: -0.50189507, w: 0.49809784}
   m_LocalPosition: {x: 126.4, y: 4.37, z: -7}
-  m_LocalScale: {x: 40, y: 40, z: 40}
+  m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children:
   - {fileID: 244325319}
   m_Father: {fileID: 0}

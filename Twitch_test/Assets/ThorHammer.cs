@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ThorHammer : MonoBehaviour
 {
-    [SerializeField] private Transform tip;
+    //[SerializeField] private Transform tip;
 
     public float rotateSpeed;
 
