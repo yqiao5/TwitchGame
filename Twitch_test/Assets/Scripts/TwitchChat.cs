@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Net.Sockets;
 using System.IO;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class TwitchChat : MonoBehaviour
@@ -15,9 +16,8 @@ public class TwitchChat : MonoBehaviour
     private TcpClient twitchClient;
     private StreamReader reader;
     private StreamWriter writer;
-    private float LastUltimateTime;
     private int[] PollResult = new int[2];
-    private bool StartPoll;
+    public bool StartPollRoom;
     private float intialPollTime;
     [SerializeField]
     private float UltimateCooldown;
@@ -25,6 +25,12 @@ public class TwitchChat : MonoBehaviour
     private float PollTime;
     [SerializeField]
     private UIController uIController;
+    [SerializeField]
+    private GameObject leftRoad;
+    [SerializeField]
+    private GameObject rightRoad;
+    [SerializeField]
+    private TextMeshProUGUI roomChoice;
     // Start is called before the first frame update
 
     public string username, password, channelName; // Get the password from twitchapps.com
@@ -34,7 +40,6 @@ public class TwitchChat : MonoBehaviour
     void Start()
     {
         Connect();
-        LastUltimateTime = Time.time;
         intialPollTime = PollTime;
     }
 
@@ -51,8 +56,7 @@ public class TwitchChat : MonoBehaviour
         {
             FireViewerWeapon("Grenade", "ok");
         }
-        UltimateWeaponPoll();
-        Poll();
+        PollRoom();
     }
 
     private void Connect()
@@ -89,17 +93,20 @@ public class TwitchChat : MonoBehaviour
                 message = message.Substring(splitPoint + 1);
                 print(String.Format("{0}: {1}", chatName, message));
                 message = message.Replace("(", "").Replace(")", "").Replace(" ","");
-                if (StartPoll)
+                if (StartPollRoom)
                 {
-                    if (message[0] == '1')
+                    if (message[0] == '!')
                     {
-                        PollResult[0]++;
-                        Debug.Log("1++");
-                    }
-                    if (message[0] == '2')
-                    {
-                        PollResult[1]++;
-                        Debug.Log("2++");
+                        if (message[1] == '1')
+                        {
+                            PollResult[0]++;
+                            Debug.Log("1++");
+                        }
+                        if (message[1] == '2')
+                        {
+                            PollResult[1]++;
+                            Debug.Log("2++");
+                        }
                     }
                 }
                 string[] str = message.Split(',');
@@ -119,29 +126,31 @@ public class TwitchChat : MonoBehaviour
         }
     }
 
-    void UltimateWeaponPoll()
+    int[] PollRoom()
     {
-        if(Time.time - LastUltimateTime > UltimateCooldown)
+        if (StartPollRoom)
         {
-            //StartPoll countdown
-            StartPoll = true;
-        }
-    }
-
-    int[] Poll()
-    {
-        if (StartPoll)
-        {
+            roomChoice.gameObject.SetActive(true);
+            roomChoice.text = "POLL! \n Big Spin:Thor's Hammer \n" + PollResult[0] + "     :     " + PollResult[1];
             if (PollTime>0)
             {
                 PollTime -= Time.deltaTime;
             }
             else
             {
-                StartPoll = false;
+                StartPollRoom = false;
                 PollTime = intialPollTime;
-                LastUltimateTime = Time.time;
-                //Debug.Log(PollResult[0] + ":" + PollResult[1]);
+                Debug.Log(PollResult[0] + ":" + PollResult[1]);
+                if(PollResult[0] > PollResult[1])
+                {
+                    leftRoad.SetActive(false);
+                    roomChoice.gameObject.SetActive(false);
+                }
+                else
+                {
+                    rightRoad.SetActive(false);
+                    roomChoice.gameObject.SetActive(false);
+                }
                 Array.Clear(PollResult, 0, PollResult.Length);
             }
         }
