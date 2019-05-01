@@ -1178,8 +1178,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4697453817444104}
   - component: {fileID: 95624349320862116}
-  - component: {fileID: 114672091379749092}
-  - component: {fileID: 1605746223}
   - component: {fileID: 1605746220}
   - component: {fileID: 1605746219}
   - component: {fileID: 1605746221}
@@ -1226,33 +1224,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114672091379749092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347116199977322}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 562180d2b264d604bb2bc6cdc4d628b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1605746223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347116199977322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1e464daf78d2c448b49f71a6371f69b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  bloodSplatter: {fileID: 1464609638}
-  lastCheckPointPos: {x: 0, y: 1, z: 0}
 --- !u!54 &1605746220
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2693,12 +2664,6 @@ PrefabInstance:
 --- !u!4 &1449472106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 420266, guid: 8c27aeead6d968e4ba986702d6b84335,
-    type: 3}
-  m_PrefabInstance: {fileID: 1449351616}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1464609638 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19886758, guid: 8c27aeead6d968e4ba986702d6b84335,
     type: 3}
   m_PrefabInstance: {fileID: 1449351616}
   m_PrefabAsset: {fileID: 0}
