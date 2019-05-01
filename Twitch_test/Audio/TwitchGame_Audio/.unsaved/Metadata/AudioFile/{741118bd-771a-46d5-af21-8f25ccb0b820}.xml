@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{741118bd-771a-46d5-af21-8f25ccb0b820}">
+		<property name="assetPath">
+			<value>AC／DC - Thunderstruck.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>292.96326530612242</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{270f89c7-5ee3-4f99-855d-15eced1764c1}</destination>
+		</relationship>
+	</object>
+</objects>
