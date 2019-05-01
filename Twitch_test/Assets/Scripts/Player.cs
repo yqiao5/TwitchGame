@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Vector3 lastCheckPointPos;
     [SerializeField] private Transform JKCPlayer;
     [SerializeField] private GameObject JKCRagdoll;
+    [SerializeField] private CameraControl JKCCameraConrtol;
     private IEnumerator coroutine;
 
     FMOD.Studio.EventInstance BGM;
@@ -39,6 +40,8 @@ public class Player : MonoBehaviour
 
     public void DealDamage(int damage)
     {
+        if (health <= 0)
+            return;
         health -= damage;
         bloodSplatter.Play();
         FMODUnity.RuntimeManager.PlayOneShot("event:/GetHurt");
@@ -56,17 +59,26 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
-        health = 100;  
-        JKCPlayer.position = lastCheckPointPos;
         
+        JKCPlayer.gameObject.SetActive(false);
+        JKCRagdoll.transform.position = JKCPlayer.position;
+        JKCRagdoll.transform.rotation = JKCPlayer.rotation;
+        JKCRagdoll.SetActive(true);
+        JKCCameraConrtol.SetDistance(10);
+        IEnumerator coroutine = Reset(2f);
+        StartCoroutine(coroutine);
     }
 
 
 
-    private IEnumerator DieCountDown(float waitTime)
+
+    private IEnumerator Reset(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
+        JKCRagdoll.SetActive(false);
+        health = 100;
         JKCPlayer.position = lastCheckPointPos;
-        JKCPlayer.rotation = Quaternion.Euler(0, 0, 0);
+        JKCPlayer.gameObject.SetActive(true);
+        JKCCameraConrtol.SetDistance(JKCCameraConrtol.defaultCameraDistance);
     }
 }

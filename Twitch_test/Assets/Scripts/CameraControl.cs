@@ -65,4 +65,8 @@ public class CameraControl : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation,Quaternion.Euler(cameraRotation),rotateSpeed);
     }
 
+    public void SetDistance(float d)
+    {
+        cameraDistance = d;
+    }
 }

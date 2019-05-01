@@ -9,7 +9,7 @@ public class Bounds : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            other.GetComponent<Player>().Die();
+            other.GetComponentInParent<Player>().Die();
         }
     }
 }
