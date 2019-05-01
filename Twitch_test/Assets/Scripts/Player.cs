@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         JKCPlayer.gameObject.SetActive(false);
 
         Vector3 temp= JKCPlayer.position;
-        temp.y += 1;
+        temp.y += 2 ;
         JKCRagdoll.transform.position = temp;
         JKCRagdoll.transform.rotation = JKCPlayer.rotation;
         JKCRagdoll.SetActive(true);
