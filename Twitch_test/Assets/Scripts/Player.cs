@@ -61,7 +61,9 @@ public class Player : MonoBehaviour
     {
         
         JKCPlayer.gameObject.SetActive(false);
-        JKCRagdoll.transform.position = JKCPlayer.position;
+        Vector3 temp= JKCPlayer.position;
+        temp.y += 1;
+        JKCRagdoll.transform.position = temp;
         JKCRagdoll.transform.rotation = JKCPlayer.rotation;
         JKCRagdoll.SetActive(true);
         JKCCameraConrtol.SetDistance(10);
